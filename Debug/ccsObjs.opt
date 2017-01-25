@@ -1,1 +1,1 @@
-"./console.obj" "./main.obj" "./planner.obj" "./stepper.obj" "./tm4c123gh6pm_startup_ccs.obj" "./tokenizer.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd" -l"libc.a" 
+"./console.obj" "./lcd12864.obj" "./main.obj" "./motion.obj" "./parser.obj" "./planner.obj" "./queue.obj" "./spindle.obj" "./stepper.obj" "./system.obj" "./tm4c123gh6pm_startup_ccs.obj" "./tokenizer.obj" "./uartstdio.obj" "C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ccs/Debug/driverlib.lib" "../tm4c123gh6pm.cmd" -l"libc.a" 

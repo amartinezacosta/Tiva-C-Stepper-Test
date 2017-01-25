@@ -7,7 +7,6 @@
 
 #ifndef PLANNER_H_
 #define PLANNER_H_
-
 #include "config.h"
 
 #define MAX(a, b)						( ((a) > (b)) ? (a) : (b) )
@@ -26,6 +25,10 @@ typedef struct{
 	volatile uint32_t min_delay;
 }Linear_Motion;
 
-void motion_linear(float *target, float feed_rate);
+void buffer_motion(float *target, float feed_rate);
+void buffer_init(void);
+bool buffer_empty(void);
+bool buffer_full(void);
+Linear_Motion *motion_serve(void);
 
 #endif /* PLANNER_H_ */

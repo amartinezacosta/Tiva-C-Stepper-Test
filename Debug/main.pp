@@ -14,15 +14,23 @@ main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h
-main.obj: ../stepper.h
-main.obj: ../planner.h
+main.obj: ../parser.h
 main.obj: ../config.h
 main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/gpio.h
+main.obj: ../gcode.h
 main.obj: ../console.h
-main.obj: ../tokenizer.h
+main.obj: ../planner.h
+main.obj: ../system.h
+main.obj: ../lcd12864.h
+main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h
+main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_types.h
+main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/pin_map.h
+main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ssi.h
+main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/sysctl.h
+main.obj: ../stepper.h
 main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/utils/uartstdio.h
 main.obj: C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h
-main.obj: C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/sysctl.h
+main.obj: ../spindle.h
 
 ../main.c: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/string.h: 
@@ -38,12 +46,20 @@ C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/ymath.h:
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/float.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdio.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h: 
-../stepper.h: 
-../planner.h: 
+../parser.h: 
 ../config.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/gpio.h: 
+../gcode.h: 
 ../console.h: 
-../tokenizer.h: 
+../planner.h: 
+../system.h: 
+../lcd12864.h: 
+C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_memmap.h: 
+C:/ti/TivaWare_C_Series-2.1.2.111/inc/hw_types.h: 
+C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/pin_map.h: 
+C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/ssi.h: 
+C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/sysctl.h: 
+../stepper.h: 
 C:/ti/TivaWare_C_Series-2.1.2.111/utils/uartstdio.h: 
 C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include/stdarg.h: 
-C:/ti/TivaWare_C_Series-2.1.2.111/driverlib/sysctl.h: 
+../spindle.h: 

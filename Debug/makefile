@@ -11,9 +11,15 @@ GEN_CMDS__FLAG :=
 
 ORDERED_OBJS += \
 "./console.obj" \
+"./lcd12864.obj" \
 "./main.obj" \
+"./motion.obj" \
+"./parser.obj" \
 "./planner.obj" \
+"./queue.obj" \
+"./spindle.obj" \
 "./stepper.obj" \
+"./system.obj" \
 "./tm4c123gh6pm_startup_ccs.obj" \
 "./tokenizer.obj" \
 "./uartstdio.obj" \
@@ -143,7 +149,7 @@ all: Stepper_test.out
 Stepper_test.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM Linker'
-	"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number -z -m"Stepper_test.map" --heap_size=0 --stack_size=512 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --display_error_number --diag_wrap=off --warn_sections --xml_link_info="Stepper_test_linkInfo.xml" --rom_model -o "Stepper_test.out" $(ORDERED_OBJS)
+	"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/bin/armcl" -mv7M4 --code_state=16 --float_support=FPv4SPD16 --abi=eabi -me -g --gcc --define=ccs="ccs" --define=PART_TM4C123GH6PM --diag_wrap=off --diag_warning=225 --display_error_number -z -m"Stepper_test.map" --heap_size=0 --stack_size=2048 -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/lib" -i"C:/ti/ccsv6/tools/compiler/ti-cgt-arm_5.2.5/include" --reread_libs --display_error_number --diag_wrap=off --warn_sections --xml_link_info="Stepper_test_linkInfo.xml" --rom_model -o "Stepper_test.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 
@@ -156,8 +162,8 @@ Stepper_test.hex: $(EXE_OUTPUTS)
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)$(BIN_OUTPUTS__QUOTED)
-	-$(RM) "console.pp" "main.pp" "planner.pp" "stepper.pp" "tm4c123gh6pm_startup_ccs.pp" "tokenizer.pp" "uartstdio.pp" 
-	-$(RM) "console.obj" "main.obj" "planner.obj" "stepper.obj" "tm4c123gh6pm_startup_ccs.obj" "tokenizer.obj" "uartstdio.obj" 
+	-$(RM) "console.pp" "lcd12864.pp" "main.pp" "motion.pp" "parser.pp" "planner.pp" "queue.pp" "spindle.pp" "stepper.pp" "system.pp" "tm4c123gh6pm_startup_ccs.pp" "tokenizer.pp" "uartstdio.pp" 
+	-$(RM) "console.obj" "lcd12864.obj" "main.obj" "motion.obj" "parser.obj" "planner.obj" "queue.obj" "spindle.obj" "stepper.obj" "system.obj" "tm4c123gh6pm_startup_ccs.obj" "tokenizer.obj" "uartstdio.obj" 
 	-@echo 'Finished clean'
 	-@echo ' '
 

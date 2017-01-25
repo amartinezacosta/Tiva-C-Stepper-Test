@@ -5,7 +5,7 @@ static bool is_White(unsigned char c);
 static bool is_Delim(unsigned char c, const unsigned char *delimiters);
 static bool is_In(unsigned char c, const unsigned char *s);
 
-uint8_t Token_get(const unsigned char *string, const unsigned char *delimiters, unsigned char *token){
+uint8_t Token_get(const char *string, const unsigned char *delimiters, char *token){
 	uint8_t count = 0;
 
 	if(*string == 0){

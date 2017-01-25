@@ -30,12 +30,14 @@
 #define Z_AXIS						(2)
 #define N_AXIS 						(3)
 #define INCH_TO_MM					(2.54)
-#define X_DIRECTION_BIT				GPIO_PIN_1
-#define Y_DIRECTION_BIT				GPIO_PIN_2
-#define Z_DIRECTION_BIT				GPIO_PIN_3
-#define X_STEPS						GPIO_PIN_1
-#define Y_STEPS						GPIO_PIN_2
-#define Z_STEPS						GPIO_PIN_3
+#define X_DIRECTION_BIT				GPIO_PIN_0
+#define Y_DIRECTION_BIT				GPIO_PIN_1
+#define Z_DIRECTION_BIT				GPIO_PIN_2
+#define X_STEPS						GPIO_PIN_0
+#define Y_STEPS						GPIO_PIN_1
+#define Z_STEPS						GPIO_PIN_2
+#define SLEEP						GPIO_PIN_6
+#define RESET						GPIO_PIN_7
 #define STEPS_MASK					X_STEPS | Y_STEPS | Z_STEPS
 #define DIRECTION_MASK				X_DIRECTION_BIT | Y_DIRECTION_BIT | Z_DIRECTION_BIT
 

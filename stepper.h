@@ -8,14 +8,7 @@
 #ifndef STEPPER_H_
 #define STEPPER_H_
 
-#include "planner.h"
-
-void stepper_end(void);
 void stepper_init(void);
-void stepper_prepare(Linear_Motion New_Motion);
-bool busy(void);
-bool update(void);
-void update_done(void);
-void stepper_position(float *position);
+void stepper_wakeup(void);
 
 #endif /* CONFIG_H_ */
